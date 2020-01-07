@@ -1,0 +1,13 @@
+{
+  "name": "aws-good-parts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./node_modules/pm2/bin/pm2 start ./server.js --name aws_good_parts --log ./logs/app.log",
+    "stop": "node ./node_modules/pm2/bin/pm2 stop aws_good_parts"
+  },
+  "dependencies": {
+    "pm2": "^4.2.0"
+  }
+}
